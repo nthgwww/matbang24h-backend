@@ -11,7 +11,7 @@ module.exports = {
       price: {
         type: Sequelize.STRING
       },
-      acerage: {
+      acreage: {
         type: Sequelize.STRING
       },
       published: {

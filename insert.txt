@@ -1,0 +1,15 @@
+INSERT INTO categories (code, value, header, subheader, createdAt, updatedAt) VALUES ("CTMB", "Cho thuê mặt bằng","Cho Thuê Mặt Bằng, Cửa Hàng + Kiot Giá Rẻ, Mới Nhất 2023",
+"Cho thuê mặt bằng - Kênh thông tin mặt bằng giá rẻ, cửa hàng, kiot số 1 Việt Nam. Tìm mặt bằng kinh doanh, buôn bán nhỏ, gần chợ tất cả có tại web matbang24h.com",
+current_timestamp, current_timestamp);
+
+INSERT INTO categories (code, value, header, subheader, createdAt, updatedAt) VALUES ("CTCH", "Cho thuê căn hộ","Cho Thuê Căn Hộ Chung Cư, Giá Rẻ, Mới Nhất 2023",
+"Cho thuê căn hộ - Kênh đăng tin cho thuê căn hộ số 1: giá rẻ, chính chủ, đầy đủ tiện nghi. Cho thuê chung cư với nhiều mức giá, diện tích cho thuê khác nhau.",
+current_timestamp, current_timestamp);
+
+INSERT INTO categories (code, value, header, subheader, createdAt, updatedAt) VALUES ("NCT", "Nhà cho thuê","Cho Thuê Nhà Nguyên Căn, Giá Rẻ, Chính Chủ, Mới Nhất 2023",
+"Cho thuê nhà nguyên căn - Kênh đăng tin cho thuê nhà số 1: giá rẻ, chính chủ, miễn trung gian, đầy đủ tiện nghi, mức giá, diện tích cho thuê khác nhau.",
+current_timestamp, current_timestamp);
+
+INSERT INTO categories (code, value, header, subheader, createdAt, updatedAt) VALUES ("CTPT", "Cho thuê phòng trọ","Cho Thuê Phòng Trọ, Giá Rẻ, Tiện Nghi, Mới Nhất 2023",
+"Cho thuê phòng trọ - Kênh thông tin số 1 về phòng trọ giá rẻ, phòng trọ sinh viên, phòng trọ cao cấp mới nhất năm 2023. Tất cả nhà trọ cho thuê giá tốt nhất tại Việt Nam.",
+current_timestamp, current_timestamp);      
