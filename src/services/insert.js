@@ -6,6 +6,7 @@ import chothuecanho from '../../data/chothuecanho.json'
 import chothuephongtro from '../../data/chothuephongtro.json'
 import nhachothue from '../../data/nhachothue.json'
 import generateCode from '../ultis/generateCode'
+import { where } from 'sequelize'
 require('dotenv').config()
 const dataBody = chothuephongtro.body
 
@@ -16,7 +17,7 @@ export const insertService  = () => new Promise(async(resolve, reject)=>{
     try {
         dataBody.forEach(async(item)=>{
             let postId = v4()
-            let labelCode = generateCode(4)
+            let labelCode = generateCode(item?.header?.class?.classType)
             let attributesId = v4()
             let userId = v4()
             let overviewId = v4()
@@ -49,10 +50,15 @@ export const insertService  = () => new Promise(async(resolve, reject)=>{
                 image: JSON.stringify(item?.images)
             })
 
-            await db.Label.create({
-                code:labelCode,
-                value:item?.header?.class?.classType
-            })
+            await db.Label.findOrCreate(
+                {
+                    where:{code: labelCode},
+                    defaults:{
+                        code: labelCode,
+                        value:item?.header?.class?.classType
+                    }
+                }
+            )
 
             await db.Overview.create({
                 id:overviewId,
