@@ -3,9 +3,7 @@ require('dotenv').config()
 import cors from 'cors'
 import initRoutes from './src/routes'
 import connectDatabase from './src/config/connectDatabase'
-// import generateCode from './src/ultis/generateCode'
 
-// console.log(generateCode('Cho thuê phòng trọ Quận Tân Bình'))
 const app = express()   
 app.use(cors({
     origin: process.env.CLIENT_URL,

@@ -27,6 +27,12 @@ module.exports = {
       categoryCode: {
         type: Sequelize.STRING,
       },
+      priceCode: {
+        type: Sequelize.STRING,
+      },
+      areaCode: {
+        type: Sequelize.STRING,
+      },
       description: {
         type: Sequelize.TEXT,
       },
